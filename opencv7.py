@@ -12,3 +12,4 @@ image = cv2.drawContours(image, contours, -1, (0, 255, 0), 4)
 
 cv2.imshow("image", image)
 cv2.waitKey(0)
+
