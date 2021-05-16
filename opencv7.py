@@ -1,6 +1,6 @@
 import cv2
 
-image = cv2.imread("image1.jpg")
+image = cv2.imread("cat.jpg")
 image_gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 ret, thresh = cv2.threshold(image_gray, 127, 255, 0)
 
