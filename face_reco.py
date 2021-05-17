@@ -1,7 +1,7 @@
 import cv2
 
 def imgDetector(img, cascade):
-    img = cv2.resize(img, dsize=None, fx=0.5, fy=0.5)
+    img = cv2.resize(img, dsize=None, fx=0.25, fy=0.25)
     gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
     results = cascade.detectMultiScale(gray,
                                        scaleFactor=1.5,
@@ -19,5 +19,5 @@ def imgDetector(img, cascade):
 cascade_filename = 'haarcascade_frontalface_alt.xml'
 cascade = cv2.CascadeClassifier(cascade_filename)
 
-img = cv2.imread('face.jpg')
+img = cv2.imread('face1.jpg')
 imgDetector(img, cascade)
